@@ -5,7 +5,7 @@
 <script>
 export default {
 	props:["name","age"],
-	name: "Profile",
+	name: "Profile"
 
 }
 

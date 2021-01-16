@@ -1,13 +1,8 @@
 <template>
-	<div>
-		featureView<br>
-		featureView<br>
-		featureView<br>
-		featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>featureView<br>
-
-		{{name}}
-
-
+	<div class="featureView">
+		 <a href="https://act.mogujie.com/zzlx67">
+			 <img src="~assets/img/home/recommend_bg.jpg">
+		 </a>
 	</div>
 </template>
 
@@ -18,5 +13,11 @@ name: "FeatureView"
 </script>
 
 <style scoped>
+ .featureView{
+	 width: 100%;
+ }
+ .featureView img{
+	 width: 100%;
+ }
 
 </style>

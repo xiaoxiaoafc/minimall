@@ -30,7 +30,7 @@ export default {
 	methods : {
 		itemClick : function (){
 			//this.$router.replace(this.path);
-			this.$router.replace({path : this.path, query : {age : 12 ,name : "陈树彪"}});
+			this.$router.replace({path : this.path});
 		}
 	},
 	computed : {

@@ -1,8 +1,6 @@
 <template>
-  <div id="nav">
 		<main-tab-bar/>
 		<router-view></router-view>
-	</div>
 </template>
 
 <script>
