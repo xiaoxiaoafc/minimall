@@ -1,5 +1,5 @@
 <template>
-		<main-tab-bar/>
+		<main-tab-bar class="main-tab-bar"/>
 		<router-view></router-view>
 </template>
 
@@ -17,4 +17,8 @@
 <style>
   @import "assets/css/base.css";
 
+	.main-tab-bar{
+		position: absolute;
+		z-index: 10;
+	}
 </style>
