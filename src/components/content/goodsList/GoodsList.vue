@@ -1,6 +1,6 @@
 <template>
 	<div class="goods">
-		<goods-list-item v-for="item in goodsList" :goodsItem="item">
+		<goods-list-item v-for="(item,index) in goodsList" :key="index"  :goodsItem="item" @loadImage="loadImage()">
 		</goods-list-item>
 	</div>
 </template>
@@ -19,7 +19,12 @@
 		components : {
 			GoodsListItem
 		},
-		name: "GoodsList"
+		name: "GoodsList",
+		methods : {
+			loadImage : function (){
+				this.$emit("loadImage");
+			}
+		}
 
 	}
 </script>

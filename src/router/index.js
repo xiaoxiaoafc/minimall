@@ -5,6 +5,7 @@ const Cart = () => import('../views/cart/Cart')
 const Category = () => import('../views/category/Category')
 const Profile = () => import('../views/profile/Profile')
 const FeatureView = () => import('../views/home/childComps/FeatureView')
+const  Detail =() => import('../views/detail/Detail')
 
 const routes = [
 	{
@@ -52,8 +53,15 @@ const routes = [
 		props: (route) => {
 			return  route.query;
 		}
-}
-
+	},
+	{
+		path : "/detail/:iid",
+		component : Detail,
+		meta : {
+			title: "详情"
+		},
+		props : true
+	}
 ];
 
 const router = createRouter({
